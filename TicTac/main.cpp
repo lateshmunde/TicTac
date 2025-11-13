@@ -22,8 +22,7 @@ char checkWinner(const char board[3][3])
 	//check winner
 
 // rows - horizontal
-	for (int r = 0; r < 3; r++)
-	{
+	for (int r = 0; r < 3; r++){
 		if (board[r][0] != ' ' && board[r][0] == board[r][1] && board[r][1] == board[r][2]) {
 			winner = board[r][0];
 			break;
@@ -31,8 +30,7 @@ char checkWinner(const char board[3][3])
 	}
 
 	// columns - vertical
-	for (int c = 0; c < 3; c++)
-	{
+	for (int c = 0; c < 3; c++){
 		if (board[0][c] != ' ' && board[0][c] == board[1][c] && board[1][c] == board[2][c]) {
 			winner = board[0][c];
 			break;
